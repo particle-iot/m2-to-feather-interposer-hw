@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.4.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1920,16 +1920,6 @@ VOUT=3.3V&lt;br&gt;</description>
 <plain>
 </plain>
 <instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
 <instance part="R1" gate="G$1" x="124.46" y="58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="122.9614" y="54.61" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="127.762" y="54.61" size="1.778" layer="96" rot="R90"/>
@@ -2824,6 +2814,18 @@ VOUT=3.3V&lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,58.42,-63.5,CTG,GND,,,,"/>
+<approved hash="104,1,114.3,-10.16,J1,P$76,GND,,,"/>
+<approved hash="104,1,43.18,-10.16,J1,P$77,GND,,,"/>
+<approved hash="104,1,58.42,-66.04,U1,CELL,N$3,,,"/>
+<approved hash="104,1,58.42,-68.58,U1,VDD,N$5,,,"/>
+<approved hash="104,1,88.9,114.3,U2,PAD,GND,,,"/>
+<approved hash="104,1,88.9,152.4,U2,SYS,3V7,,,"/>
+<approved hash="104,1,88.9,149.86,U2,SYS,3V7,,,"/>
+<approved hash="104,1,60.96,218.44,U3,VIN,3V7,,,"/>
+<approved hash="113,1,145.017,136.964,CN1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
