@@ -10,6 +10,7 @@ The interposer board will need to replicate some of the features not found on th
 #### Features:
 * Nano SIM Tray
 * PMIC, Same PMIC on Boron
+* 3.3V@1A Buck regulator like Boron
 * Top or Side pressed MODE and RESET buttons
 * Enable pin support
-* MCO/Board outline is identical size to feather board to reduce crashing
+* MCO/Board outline is slightly larger than a feather board due to SMT header. 
