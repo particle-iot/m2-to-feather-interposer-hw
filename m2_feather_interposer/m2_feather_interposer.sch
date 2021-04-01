@@ -15287,6 +15287,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U3" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" deviceset="MAX1704X" device="" package3d_urn="urn:adsk.eagle:package:39055/1"/>
 <part name="R11" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="0"/>
 <part name="R13" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="0"/>
+<part name="C13" library="m2_feather_interposer" deviceset="RICKK2_CAP-10UF-0603" device="" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -15621,6 +15622,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="8.89" y="73.8886" size="1.778" layer="95"/>
 <attribute name="VALUE" x="20.32" y="74.168" size="1.778" layer="96"/>
 </instance>
+<instance part="C13" gate="G$1" x="13.97" y="172.72" smashed="yes">
+<attribute name="NAME" x="15.494" y="175.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="15.494" y="170.561" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15761,6 +15766,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-31.75" y="167.64" size="1.778" layer="95"/>
 <pinref part="R13_" gate="G$1" pin="1"/>
 <pinref part="R11_" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="13.97" y1="170.18" x2="13.97" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="13.97" y1="167.64" x2="7.62" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
@@ -16188,10 +16196,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="PMID" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PMID"/>
-<wire x1="53.34" y1="180.34" x2="7.62" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="180.34" x2="13.97" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="13.97" y1="180.34" x2="7.62" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="180.34" x2="7.62" y2="177.8" width="0.1524" layer="91"/>
 <label x="12.7" y="180.34" size="1.778" layer="95"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="13.97" y1="177.8" x2="13.97" y2="180.34" width="0.1524" layer="91"/>
+<junction x="13.97" y="180.34"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
